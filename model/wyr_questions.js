@@ -1,3 +1,4 @@
+// adding an array of would you rather questions
 const questions = [
     {
         'question': 'Live in a house shaped like a triangle or a house shaped like a circle?',
@@ -25,9 +26,13 @@ const questions = [
         'answer2': 'Famous scientist'
     },
 ]
+// function it will return a random questions and answer
 function randomWYRQuestion(){
+    // it will get random index
     const randomIndex = Math.floor(Math.random() * questions.length);
+    // it will use a index to get the question
     const randomQuestion = questions[randomIndex];
+    // it will return a random questions
     return randomQuestion;
 }
 module.exports = randomWYRQuestion;
